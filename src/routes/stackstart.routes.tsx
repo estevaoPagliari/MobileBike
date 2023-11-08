@@ -6,9 +6,9 @@ import * as SecureStore from 'expo-secure-store'
 import { useState, useEffect } from 'react'
 import Signup from '../screen/Signup'
 import ConfirmUser from '../screen/ConfirmUser'
-
-import TabRoutes from './tab.routes'
 import Home from '../screen/Home'
+import Profile from '../screen/Profile'
+import Configuration from '../screen/Configuration'
 const Stack = createNativeStackNavigator()
 
 export default function StackRoutes() {
@@ -29,6 +29,8 @@ export default function StackRoutes() {
       <Stack.Screen name="Signup" component={Signup} />
       <Stack.Screen name="NewUser" component={NewUser} />
       <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Profile" component={Profile} />
+      <Stack.Screen name="Configuration" component={Configuration} />
     </Stack.Navigator>
   )
 }

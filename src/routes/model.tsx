@@ -7,6 +7,8 @@ export type propsNavigationStack = {
   Home: undefined
   Signup: undefined
   ConfirmUser: undefined
+  Profile: undefined
+  Configuration: undefined
 }
 
 export type propsStack = NativeStackNavigationProp<propsNavigationStack>

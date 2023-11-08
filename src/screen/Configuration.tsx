@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { StyleSheet, Text, View, ActivityIndicator } from 'react-native'
-import HeaderProfile from './components/HeaderProfile'
+import HeaderConfig from './components/HeaderConfig'
 import User, { LoadUser } from '../api/User'
 
-export default function Profile() {
+export default function Configuration() {
   const [user, setUser] = useState<User | null>(null)
 
   async function LoadUserData() {
@@ -20,9 +20,9 @@ export default function Profile() {
     <View style={styles.container}>
       {user ? (
         <View style={styles.container}>
-          <HeaderProfile name={user.name} />
+          <HeaderConfig name={user.name} />
           <View style={styles.containermiddle}>
-            <Text style={styles.title}>Perfil</Text>
+            <Text style={styles.title}>Configuração</Text>
           </View>
         </View>
       ) : (
